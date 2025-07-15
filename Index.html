@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Three.js App</title>
+      <style>
+        body { margin: 0; }
+        canvas { display: block; }
+      </style>
+    </head>
+  <body>
+  <button onclick="openFullscreen();">Open Fullscreen</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+    <script src="js/OrbitControls.js"></script>
+
+
+    <script src="js/entorno.js"></script>
+
+    <script src="js/Skeleton.js"></script>
+    <script src="js/dragon.js"></script>
+    <script src="js/Dog.js"></script>
+
+
+
+  	<script src="js/main.js"></script>
+
+
+
+
+<script>
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
+
+</script>
+
+
+
+
+  </body>
+</html>
